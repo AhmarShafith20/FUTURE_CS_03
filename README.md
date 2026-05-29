@@ -1,84 +1,133 @@
-# FUTURE_CS_03
-Future Interns | Cyber Security Internship | Task 3
+# 🔐 API Security Risk Analysis — FUTURE_CS_03
 
-📌 Objective
-Perform a read-only API Security Risk Analysis on a public/demo API, identify common security risks, classify their severity, assess business impact, and document professional remediation recommendations — just like a real AppSec consultant would.
+Cyber Security Internship Project  
+Future Interns | Track: CS | Task: 03
 
-🌐 API Tested
-FieldDetailsAPI NameJSONPlaceholderBase URLhttps://jsonplaceholder.typicode.comTypePublic REST API (Demo/Test)AuthenticationNone required (part of findings)
+---
 
-🛠️ Tools Used
-ToolPurposePostmanAPI endpoint testing and response inspectionBrowser DevToolsHeader analysis and network inspectionJSONPlaceholderPublic demo REST API — target for analysisOWASP API Security Top 10Industry framework for risk classificationMS Word / PDFProfessional report documentationGitHubRepository hosting and version control
+## 📌 Project Overview
 
-⚠️ Scope & Ethics
-✅ Allowed
+This project performs a **read-only security analysis** of a public REST API (JSONPlaceholder).  
+The goal is to identify common API security vulnerabilities, classify their severity, map them to OWASP API Security Top 10, and provide remediation recommendations.
 
-Testing public / demo APIs only
-Read-only GET requests
-Safe POST to demo endpoints
-Documentation-based analysis
-Header, token, and response inspection
+This is an **educational security assessment** conducted in a safe and ethical environment.
 
-❌ Not Allowed
+---
 
-Exploitation or bypass attempts
-Flooding / DoS testing
-Attacking private or production APIs
+## 🌐 API Information
+
+- **API Name:** JSONPlaceholder  
+- **Base URL:** https://jsonplaceholder.typicode.com  
+- **Type:** Public REST API (Demo/Test API)  
+- **Authentication:** Not required  
+
+---
+
+## 🛠️ Tools Used
+
+- Postman → API testing and request execution  
+- Browser DevTools → Header inspection  
+- JSONPlaceholder API → Target system  
+- OWASP API Security Top 10 → Risk classification framework  
+- GitHub → Version control and repository hosting  
+
+---
+
+## 📋 Endpoints Tested
+
+| Method | Endpoint | Purpose |
+|--------|----------|--------|
+| GET | /users | Retrieve all users |
+| GET | /users/1 | Retrieve single user |
+| GET | /posts | Retrieve all posts |
+| GET | /todos | Retrieve all to-do items |
+| POST | /posts | Simulate resource creation |
+
+---
+
+## 🔬 Methodology
+
+1. Selected a safe public API (JSONPlaceholder)  
+2. Reviewed API documentation  
+3. Performed GET and POST requests using Postman  
+4. Inspected responses and headers  
+5. Identified security risks  
+6. Mapped findings to OWASP API Security Top 10  
+7. Documented results in a structured report  
+
+---
+
+## 🚨 Key Security Findings
+
+- Unauthenticated API Access  
+- Excessive Data Exposure  
+- Missing Rate Limiting  
+- Broken Object Level Authorization (BOLA)  
+- Missing Security Headers  
+- Unrestricted Write Access  
+
+---
+
+## 📊 Risk Classification Summary
+
+- 🔴 High Severity Issues:
+  - Broken Object Level Authorization
+  - Excessive Data Exposure
+  - Missing Rate Limiting
+
+- 🟡 Medium Severity Issues:
+  - Security Misconfiguration
+  - Broken Authentication (Unrestricted Write Access)
+
+---
+
+## 📁 Repository Structure
 
 
-All testing was conducted ethically and legally. No systems were harmed or exploited.
-
-
-🔬 Methodology
-1. API Selection         → Chose JSONPlaceholder (safe, public, demo)
-2. Documentation Review  → Reviewed all available endpoints
-3. Endpoint Testing      → Sent requests via Postman, recorded responses
-4. Header Analysis       → Inspected response headers for security gaps
-5. Risk Identification   → Mapped findings to OWASP API Security Top 10
-6. Risk Classification   → Assigned severity: Low / Medium / High
-7. Report Documentation  → Wrote professional security report with remediation
-
-📋 Endpoints Tested
-#MethodEndpointPurpose1GET/usersRetrieve all users2GET/users/1Retrieve single user by ID3GET/postsRetrieve all posts4GET/todosRetrieve all to-do items5POST/postsSimulate resource creation
-
-🚨 Findings Summary
-#FindingSeverityOWASP Category1Unauthenticated API Access🔴 HighAPI1:2023 – Broken Object Level Auth2Excessive Data Exposure🔴 HighAPI3:2023 – Excessive Data Exposure3Missing Rate Limiting🔴 HighAPI4:2023 – Unrestricted Resource Consumption4Broken Object Level Authorization🟡 MediumAPI1:2023 – BOLA5Missing Security Headers🟡 MediumAPI8:2023 – Security Misconfiguration6Unrestricted Write Access🟡 MediumAPI2:2023 – Broken Authentication
-
-📁 Repository Structure
 FUTURE_CS_03/
 │
 ├── screenshots/
-│   ├── Test1a.png              ← GET /users — Response Body
-│   ├── test1b.png              ← GET /users — Response Headers
-│   ├── Test-2.png              ← GET /users/1 — Single User Data
-│   ├── Test-3_Get_All_100_Post_.png  ← GET /posts — 100 Records
-│   ├── Test-4_Get_todos_.png   ← GET /todos — Todo Data
-│   └── Test-5_POST_.png        ← POST /posts — 201 Created
+│ ├── Test1a.png
+│ ├── test1b.png
+│ ├── Test-2.png
+│ ├── Test-3_Get_All_100_Post_.png
+│ ├── Test-4_Get_todos_.png
+│ └── Test-5_POST_.png
 │
 ├── report/
-│   └── API_Security_Risk_Analysis_Report.pdf
+│ └── API_Security_Risk_Analysis_Report.pdf
 │
 └── README.md
 
-📄 Deliverables
 
-✅ Professional API Security Risk Analysis Report (PDF)
-✅ 6 Postman Screenshots documenting all test results
-✅ Public GitHub Repository (FUTURE_CS_03)
-✅ README explaining tools, scope, and methodology
+---
 
+## 📄 Deliverables
 
-🔗 References
+- ✅ API Security Risk Analysis Report (PDF)
+- ✅ Postman request screenshots (6 images)
+- ✅ GitHub repository with structured files
+- ✅ README documentation
 
-OWASP API Security Top 10
-API Security Checklist
-JSONPlaceholder
+---
 
+## 🔗 References
 
-👤 Author
-[Your Full Name]
-Cyber Security Intern — Future Interns
-Track Code: CS | Task: 03
-📧 contact@futureinterns.com
+- OWASP API Security Top 10  
+- https://jsonplaceholder.typicode.com  
+- API Security Best Practices (OWASP Guide)
 
-This assessment was conducted solely for educational purposes as part of the Future Interns Cyber Security Internship Program.
+---
+
+## 👤 Author
+
+**[Your Full Name]**  
+Cyber Security Intern — Future Interns  
+Track: CS | Task: 03  
+
+---
+
+## ⚠️ Disclaimer
+
+This project was conducted strictly for **educational purposes only** using a public demo API.  
+No real systems were attacked, exploited, or harmed.
