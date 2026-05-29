@@ -1,4 +1,4 @@
-# 🔐 API Security Risk Analysis — FUTURE_CS_03
+#FUTURE_CS_03
 
 Cyber Security Internship Project  
 Future Interns | Track: CS | Task: 03
@@ -121,7 +121,7 @@ FUTURE_CS_03/
 
 ## 👤 Author
 
-**[Your Full Name]**  
+**Ahmar Shafith Baijur Ahamed**  
 Cyber Security Intern — Future Interns  
 Track: CS | Task: 03  
 
