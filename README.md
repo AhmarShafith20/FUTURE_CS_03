@@ -81,27 +81,6 @@ This is an **educational security assessment** conducted in a safe and ethical e
 
 ---
 
-## 📁 Repository Structure
-
-
-FUTURE_CS_03/
-│
-├── screenshots/
-│ ├── Test1a.png
-│ ├── test1b.png
-│ ├── Test-2.png
-│ ├── Test-3_Get_All_100_Post_.png
-│ ├── Test-4_Get_todos_.png
-│ └── Test-5_POST_.png
-│
-├── report/
-│ └── API_Security_Risk_Analysis_Report.pdf
-│
-└── README.md
-
-
----
-
 ## 📄 Deliverables
 
 - ✅ API Security Risk Analysis Report (PDF)
